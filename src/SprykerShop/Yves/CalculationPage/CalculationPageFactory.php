@@ -24,9 +24,6 @@ class CalculationPageFactory extends AbstractFactory
         return $this->getProvidedDependency(CalculationPageDependencyProvider::CLIENT_QUOTE);
     }
 
-    /**
-     * @return \SprykerShop\Yves\CalculationPage\Dependency\Client\CalculationPageToCalculationClientInterface
-     */
     public function getCalculationClient(): CalculationPageToCalculationClientInterface
     {
         return $this->getProvidedDependency(CalculationPageDependencyProvider::CLIENT_CALCULATION);

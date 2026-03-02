@@ -41,11 +41,6 @@ class CalculationPageRouteProviderPlugin extends AbstractRouteProviderPlugin
         return $routeCollection;
     }
 
-    /**
-     * @param \Spryker\Yves\Router\Route\RouteCollection $routeCollection
-     *
-     * @return \Spryker\Yves\Router\Route\RouteCollection
-     */
     protected function addCalculationDebugRoute(RouteCollection $routeCollection): RouteCollection
     {
         $route = $this->buildRoute('/calculation/debug', 'CalculationPage', 'Debug', 'cartAction');
